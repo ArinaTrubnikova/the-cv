@@ -16,8 +16,11 @@ body {
 
 .main_menu {
     background-image: url('images/1.jpg');
+    /*добавление картинки на задний фон*/
     background-repeat: no-repeat;
+    /*чтобы картинка не повторялась*/
     background-size: cover;
+    /*чтобы картинка покрывала весь блок*/
 
 }
 
@@ -25,7 +28,7 @@ body {
     display: flex;
     /*Так у блоков появилось свойство flex-контекст, которое в дальнейшем позволит ими управлять гораздо проще, чем с использованием стандартного CSS.*/
     justify-content: flex-end;
-    /*выравнивание элементов по оси Х (space-between, tflex-start, tflex-end, center, space-around)*/
+    /*выравнивание элементов по оси Х (space-between, flex-start, flex-end, center, space-around)*/
     margin-bottom: 0px
 }
 
@@ -33,9 +36,9 @@ body {
     font-size: 20px;
     text-decoration: none;
     /*убрать подчёркивание у ссылок*/
-    padding: 35px;
+    padding: 11px;
     /*устанавливает внутренние отступы/поля со всех сторон элемента. Область отступов это пространство между содержанием элемента и его границей.*/
-    color: black;
+    color: #360230;
     font-weight: 600;
     text-align: center;
     /*описывает, как линейное содержимое, наподобие текста, выравнивается в блоке его родительского элемента.*/
@@ -44,8 +47,10 @@ body {
 }
 
 .link_menu:hover {
-    color: rgb(255, 255, 255);
+    color: #eb83e0;
     /*при наведении меняет цвет*/
+    box-shadow: 4px 4px 14px #eb83e0;
+    /*тень вокруг элемента*/
 }
 
 hr {
@@ -56,6 +61,24 @@ hr {
 
 .main_info {
     background-color: rgba(233, 204, 255, 0.6);
+    /*добавление цвета на фон с размытием*/
+}
+
+.main_photo {
+    width: 300px;
+    border-radius: 50%;
+    /*чтобы картинка была круглой, рх для закруглённых углов*/
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.9);
+    /*тень вокруг фотки*/
+    transition: 1s;
+    /* Время эффекта */
+    display: block;
+    /* Убираем небольшой отступ снизу */
+}
+
+.main_photo:hover {
+    transform: scale(1.1);
+    /* Увеличиваем масштаб */
 }
 
 .main_skills {
@@ -88,6 +111,7 @@ hr {
 
 .link_courses:hover {
     color: rgb(255, 255, 255);
+
 }
 
 .footer {
@@ -102,7 +126,7 @@ hr {
 
 .head_3 {
     font-weight: 600;
-    color: #000;
+    color: #360230;
     text-align: right;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -114,8 +138,13 @@ hr {
     margin-right: 15px;
 }
 
+
 .soc {
     height: 25px;
-    padding-right: 10px;
+    padding: 10px 10px;
     margin-bottom: 20px;
+}
+
+.soc:hover {
+    box-shadow: 4px 4px 4px #eb83e0;
 }
