@@ -15,7 +15,10 @@ body {
 }
 
 .main_menu {
-    background-image: url('images/uzor.jpg');
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .menu {
@@ -27,12 +30,13 @@ body {
 }
 
 .link_menu {
+    font-size: 20px;
     text-decoration: none;
     /*убрать подчёркивание у ссылок*/
     padding: 35px;
     /*устанавливает внутренние отступы/поля со всех сторон элемента. Область отступов это пространство между содержанием элемента и его границей.*/
     color: black;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     /*описывает, как линейное содержимое, наподобие текста, выравнивается в блоке его родительского элемента.*/
     margin: 20px
@@ -46,18 +50,19 @@ body {
 
 hr {
     margin: 0;
-    color: #000000;
+    background-image: url(images/png-transparent-desktop-abstract.png);
+    height: 10px
 }
 
 .main_info {
-    background-color: rgba(233, 204, 255, 0.5);
+    background-color: rgba(233, 204, 255, 0.6);
 }
 
 .main_skills {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    background-color: rgba(233, 204, 255, 0.5);
+    background-color: rgba(233, 204, 255, 0.6);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -66,12 +71,14 @@ hr {
 .skills {}
 
 .main_job {
-    background-color: rgba(233, 204, 255, 0.5);
+    display: flex;
+    background-color: rgba(233, 204, 255, 0.6);
     margin: 0
 }
 
 .main_courses {
-    background-color: rgba(233, 204, 255, 0.5);
+    display: flex;
+    background-color: rgba(233, 204, 255, 0.6);
 }
 
 .link_courses {
@@ -86,16 +93,19 @@ hr {
 .footer {
     display: flex;
     justify-content: flex-end;
-    background-image: url('images/uzor.jpg');
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0
 }
 
 .head_3 {
-    font-weight: 400;
+    font-weight: 600;
+    color: #000;
     text-align: right;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 18px
 }
 
@@ -107,4 +117,5 @@ hr {
 .soc {
     height: 25px;
     padding-right: 10px;
+    margin-bottom: 20px;
 }
