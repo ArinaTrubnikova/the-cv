@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+/*ссылка на шрифт, импортированная*/
+
+body {
+    margin: 0;
+    /*в родительском элементе убирает отступы от границ браузерного окна*/
+    background-color: #fff;
+    /* фон всего элемента*/
+    font-family: 'Roboto', sans-serif;
+    /*шрифт, если первый не подключен, подключается второй и тд*/
+    font-size: 16px;
+    /*размер шрифта для всего элемента*/
+    font-weight: 500;
+    /*жирность шрифта (bold, от 600 уже жирнее)*/
+}
+
+.main_menu {
+    background-image: url('images/uzor.jpg');
+}
+
+.menu {
+    display: flex;
+    /*Так у блоков появилось свойство flex-контекст, которое в дальнейшем позволит ими управлять гораздо проще, чем с использованием стандартного CSS.*/
+    justify-content: flex-end;
+    /*выравнивание элементов по оси Х (space-between, tflex-start, tflex-end, center, space-around)*/
+    margin-bottom: 0px
+}
+
+.link_menu {
+    text-decoration: none;
+    /*убрать подчёркивание у ссылок*/
+    padding: 35px;
+    /*устанавливает внутренние отступы/поля со всех сторон элемента. Область отступов это пространство между содержанием элемента и его границей.*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /*описывает, как линейное содержимое, наподобие текста, выравнивается в блоке его родительского элемента.*/
+    margin: 20px
+        /*определяет внешний отступ на всех четырёх сторонах элемента*/
+}
+
+.link_menu:hover {
+    color: rgb(255, 255, 255);
+    /*при наведении меняет цвет*/
+}
+
+hr {
+    margin: 0;
+    color: #000000;
+}
+
+.main_info {
+    background-color: rgba(233, 204, 255, 0.5);
+}
+
+.main_skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    background-color: rgba(233, 204, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.skills {}
+
+.main_job {
+    background-color: rgba(233, 204, 255, 0.5);
+    margin: 0
+}
+
+.main_courses {
+    background-color: rgba(233, 204, 255, 0.5);
+}
+
+.link_courses {
+    text-decoration: none;
+    color: black;
+}
+
+.link_courses:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('images/uzor.jpg');
+    margin: 0;
+    padding: 0
+}
+
+.head_3 {
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 18px
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.soc {
+    height: 25px;
+    padding-right: 10px;
+}

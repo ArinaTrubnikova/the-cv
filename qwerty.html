@@ -4,22 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <title>Arina CV</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
+
     <header class="main_menu">
-        <div class="menu">
-            <nav>
-                <p><a href="#main">Главная</a></p>
-                <p><a href="#skilll">Skills</a></p>
-                <p><a href="#job">Опыт работы</a></p>
-                <p><a href="#learn">Обучение</a></p>
+        <div>
+            <nav class="menu">
+                <p><a class="link_menu" href="#main">Главная</a></p>
+                <p><a class="link_menu" href="#skilll">Skills</a></p>
+                <p><a class="link_menu" href="#job">Опыт работы</a></p>
+                <p><a class="link_menu" href="#learn">Обучение</a></p>
             </nav>
         </div>
     </header>
 
+
+    <hr>
+
     <section class="main_info">
-        <div class="me" id="main">
+        <div id="main">
             <table cellspacing="20">
                 <tr>
                     <td>
@@ -43,7 +48,7 @@
     <hr>
 
     <section class="main_skills">
-        <div class="my skill" id="skilll">
+        <div id="skilll">
             <h2 class="head_2">Мои hard-skillы</h2>
             <ul class="skills">
                 <em>
@@ -90,7 +95,7 @@
     <hr>
 
     <section class="main_job">
-        <div class="work" id="job">
+        <div id="job">
             <h2 class="head_2">Опыт работы</h2>
             <table cellspacing="13" class="work">
                 <thead>
@@ -124,29 +129,33 @@
     <hr>
 
     <section class="main_courses">
-        <div class="courses" id="learn">
+        <div id="learn">
             <h2 class="head_2">Моё обучение</h2>
-            <a href="courses.html" target="_blank">Курсы</a>
+            <a class="link_courses" href="courses.html" target="_blank">Курсы</a>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="social">
-            <h2 class="head_2">Я в соцсетях</h2>
-            <a class="link" href="https://web.telegram.org/a/" target="_blank">Telegram<img class="soc"
-                    src="images/telega.png" height="20" />
-            </a>
-            <a class="link" href="https://vk.com/t_arishka" target="_blank">Вконтакте<img class="soc"
-                    src="images/vk.png" height="20" />
-            </a>
-            <a class="link" href="https://www.instagram.com/t_arisha/" target="_blank">Instagram<img class="soc"
-                    src="images/insta.png" height="20" />
-            </a>
-            <a class="link" href="https://github.com/ArinaTrubnikova" target="_blank">GitHub<img class="soc"
-                    src="images/github.png" height="20" />
-            </a>
-        </div>
-    </footer>
+    <hr>
+
+    <section>
+        <footer class="footer">
+            <div>
+                <h3 class="head_3">Я в социальных сетях</h3>
+                <a class="link" href="https://web.telegram.org/a/" target="_blank"><img class="soc"
+                        src="images/telega.png" />
+                </a>
+                <a class="link" href="https://vk.com/t_arishka" target="_blank"><img class="soc"
+                        src="images/VK_Logo.png" />
+                </a>
+                <a class="link" href="https://www.instagram.com/t_arisha/" target="_blank"><img class="soc"
+                        src="images/insta.png" />
+                </a>
+                <a class="link" href="https://github.com/ArinaTrubnikova" target="_blank"><img class="soc"
+                        src="images/25231.png" />
+                </a>
+            </div>
+        </footer>
+    </section>
 
 </body>
 
