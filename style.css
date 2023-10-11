@@ -69,7 +69,7 @@ hr {
 
 
 /*------------------------------------------------------------------------------------ГЛАВНАЯ ИНФОРМАЦИЯ-----------------------------------------------------------------------*/
-.main_info {
+#main {
     display: flex;
     justify-content: center;
     padding-left: 105px;
@@ -82,6 +82,7 @@ hr {
     /*расстояние между буквами*/
     word-spacing: 5px;
     /*расстояние между словами*/
+
 }
 
 .main_photo {
@@ -95,6 +96,8 @@ hr {
     /* Время эффекта */
     display: block;
     /* Убираем небольшой отступ снизу */
+    margin-top: 45px;
+    margin-bottom: 45px
 }
 
 .main_photo:hover {
@@ -102,19 +105,54 @@ hr {
     /* Увеличиваем масштаб */
 }
 
+.horizontal {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 700px;
+    height: 3px;
+    padding-left: 50px;
+    padding-right: 90px
+}
+
+
+/*Отступы элементов отсчитываются от границ родительского блока, в котором находятся*/
+
+.vertical {
+    position: absolute;
+    /*позиционирование относительно левого верхнего угла окна браузера, применяется, чтобы наложить поверх*/
+    width: 3px;
+    height: 200px;
+    top: 0px;
+    /*отступы от границ окна для абсолютов*/
+    left: 150px;
+    /*отступы от границ окна для абсолютов*/
+
+}
+
+.vertical_2 {
+    position: absolute;
+    width: 3px;
+    height: 200px;
+    top: 150px;
+    left: 890px;
+
+
+}
+
 .head_1 {
-    padding-left: 400px;
-    margin-top: 90px
+    padding-left: 0px;
 }
 
 .main_h3 {
-    padding-left: 400px;
+    padding-left: 0px;
 
 }
 
-.main_p {
-    padding-left: 400px;
-
+.main_info_p {
+    position: relative;
+    text-align: center;
+    padding-left: 100px;
+    margin-top: 35px;
 }
 
 
@@ -124,13 +162,57 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    background-color: rgba(233, 204, 255, 0.6);
+    background-color: rgba(233, 204, 255, 0.445);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #86898f;
+    font-weight: bold;
+}
+
+.soft {
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 150px;
+    width: 700px;
+    border-radius: 20px;
+    text-align: left;
 
 }
 
-.skills {}
+.soft:hover {
+    transition: 2s;
+    transform: scale(1.3);
+    color: #360230;
+    box-shadow: 4px 4px 14px #000;
+}
+
+.hard {
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+.hard:hover {
+    transition: 2s;
+    transform: scale(1.3);
+    color: #360230;
+    box-shadow: 4px 4px 14px #000;
+}
+
+#skill {
+    display: flex;
+    margin: 20px;
+
+}
+
+.head_2 {
+    text-align: center;
+}
 
 
 
@@ -140,6 +222,7 @@ hr {
     background-color: rgba(233, 204, 255, 0.6);
     margin: 0
 }
+
 
 
 
