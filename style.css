@@ -225,25 +225,6 @@ hr {
 
 
 
-
-/*-------------------------------------------------------------------------------------КУРСЫ-------------------------------------------------------------------------------*/
-.main_courses {
-    display: flex;
-    background-color: rgba(233, 204, 255, 0.6);
-}
-
-.link_courses {
-    text-decoration: none;
-    color: black;
-}
-
-.link_courses:hover {
-    color: rgb(255, 255, 255);
-
-}
-
-
-
 /*-------------------------------------------------------------------------------------ПОДВАЛ--------------------------------------------------------------------------------*/
 .footer {
     display: flex;
@@ -282,4 +263,97 @@ hr {
 .soc:hover {
     box-shadow: 4px 4px 4px #eb83e0;
     border-radius: 50%;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------КУРСЫ---------------------------------------------------------------------------------*/
+
+.sertificate {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: #ffd8fb
+}
+
+.head_1_1 {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 80px;
+    margin-top: 40;
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    padding-left: 30px;
+    color: #360230;
+    text-shadow: 4px 4px 14px #fff;
+}
+
+
+.sertificate_img {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 0
+}
+
+.img_ {
+    width: 600px
+}
+
+.sertificate_info {
+    text-align: center;
+    width: 500px;
+    color: #000;
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-right: 100px;
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ser_title {
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 155px;
+    color: #86898f;
+}
+
+.sertificate_1 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #ffd8fb
+}
+
+.sertificate_info_1 {
+    text-align: center;
+    width: 500px;
+    color: #000;
+    padding-left: 100px;
+    padding-top: 80px;
+    padding-right: 90px;
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ser_title_2 {
+    text-align: center;
+    padding-top: 155px;
+    padding-right: 100px;
+    color: #86898f;
 }
