@@ -2,6 +2,12 @@
 /*ссылка на шрифт, импортированная*/
 
 
+/*padding: 10px 35px - первое значение верх/низ, второе - лево/право.
+padding - отступ от края блока до его контента,
+margin - отступ от края блока до другого блока*/
+
+/*box-sizing: border-box - чтобы учитывать в элементе границы*/
+
 
 /*---------------------------------------------------------------------------КОРНЕВОЙ ЭЛЕМЕНТ----------------------------------------------------------------------------*/
 body {
@@ -59,6 +65,14 @@ body {
     /*тень вокруг элемента*/
 
 }
+
+/* .link_menu:active {
+    color: white;
+} при удерживании меняет цвет*/
+
+/* .link_menu:visited {
+    color: grey
+} посещённые ссылки становятся серыми*/
 
 hr {
     margin: 0;
@@ -167,6 +181,7 @@ hr {
     background-size: cover;
     color: #86898f;
     font-weight: bold;
+    padding: 40px
 }
 
 .soft {
@@ -177,6 +192,11 @@ hr {
     width: 700px;
     border-radius: 20px;
     text-align: left;
+}
+
+.ul {
+    list-style: none;
+    /*чтобы не было нумерации у списков*/
 
 }
 
@@ -219,11 +239,58 @@ hr {
 /*----------------------------------------------------------------------------------ОПЫТ РАБОТЫ-----------------------------------------------------------------------------*/
 .main_job {
     display: flex;
+    justify-content: center;
     background-color: rgba(233, 204, 255, 0.6);
-    margin: 0
+    margin: 0;
+    padding: 40px;
+    color: #86898f;
 }
 
+.job {
+    margin: 20px 100px
+}
 
+.head_job {
+    text-align: center;
+    margin-bottom: 0;
+    color: #360230
+}
+
+.work {
+    padding: 20px;
+    width: 1000px;
+
+}
+
+.work th {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.work tr:nth-child(even) {
+    background: #360230;
+    height: 40px;
+    text-align: center;
+    color: #e9a6e2;
+}
+
+.work tr:nth-child(odd) {
+    background: #e9a6e2;
+    height: 40px;
+    text-align: center;
+    color: #360230;
+}
+
+/* чётные строки, в противном случае - ODD */
+
+
+/*.work td:nth-child(1), .work td:nth-child(3)
+    {
+    color: #fff;
+}
+/*чтобы обратиться к определённому ребёнку родительского элемента */
 
 /*-------------------------------------------------------------------------------------ПОДВАЛ--------------------------------------------------------------------------------*/
 .footer {
@@ -349,6 +416,7 @@ hr {
     background-size: cover;
     font-weight: 600;
     font-size: 20px;
+
 }
 
 .ser_title_2 {
